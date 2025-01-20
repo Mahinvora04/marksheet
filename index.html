@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Marksheet</title>
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Marksheet</h1>
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required />
+        <input
+          type="number"
+          id="maths"
+          placeholder="Enter Maths Marks"
+          required
+        />
+        <input
+          type="number"
+          id="science"
+          placeholder="Enter Science Marks"
+          required
+        />
+        <input
+          type="number"
+          id="english"
+          placeholder="Enter English Marks"
+          required
+        />
+        <button type="submit">Add Student</button>
+      </form>
+      <button id="downloadCsv">Download CSV</button>
+
+      <input type="file" id="uploadCsvInput" accept=".csv" />
+      <table id="marksTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Total</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be added here in table format-->
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
